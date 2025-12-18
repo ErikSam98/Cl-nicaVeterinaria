@@ -10,43 +10,22 @@ Guía rápida para **levantar un proyecto React** usando `npm run dev`.
 
 ### 🔧 Instalación de Node.js y npm
 
-#### Windows / macOS
+#### Windows (usando instalador .msi — recomendado)
 
-1. Descarga el instalador desde el sitio oficial:
-    - https://nodejs.org
-2. Instala la versión **LTS** siguiendo el asistente.
+1. Entra a la página oficial de Node.js.
+2. En la sección de descargas, selecciona:
+   - **Sistema operativo:** Windows
+   - **Arquitectura:** x64
+3. Descarga el archivo **Windows Installer (.msi)**.
 
-### ⚙️ Permitir instalación global de paquetes (Windows)
+> ✅ **Importante:** Debes descargar el archivo **`.msi`**, no el `.zip`.
 
-En **Windows**, para evitar errores de permisos al usar `npm -g`, ejecuta en **PowerShell como Administrador**:
+4. Ejecuta el archivo `.msi` descargado.
+5. Sigue el asistente de instalación dejando las opciones por defecto.
+   - Asegúrate de que esté marcada la opción **“Add to PATH”**.
+6. Finaliza la instalación.
 
-```bash
-npm config set prefix "$env:APPDATA\npm"
-```
-
-Luego agrega npm al PATH (si no se agregó automáticamente):
-
-```text
-C:\Users\TU_USUARIO\AppData\Roaming\npm
-```
-
-Reinicia la terminal.
-
-Verifica la instalación:
-
-```bashbash
-node -v
-npm -v
-```
-
-#### Linux (Ubuntu / Debian)
-
-```bash
-sudo apt update
-sudo apt install nodejs npm
-```
-
-Verifica:
+Verifica la instalación abriendo una nueva terminal:
 
 ```bash
 node -v
